@@ -1,0 +1,13 @@
+{
+  "welcomeComplete": true,
+  "theme": {
+    "dark": true,
+    "layout": "full"
+  },
+  "drawing": {
+    "sketch": false
+  },
+  "cssSnippets": [
+    "./no-svg-invert.css"
+  ]
+}

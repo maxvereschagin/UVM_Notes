@@ -1,0 +1,203 @@
+{
+  "edges": [
+    {
+      "fromNode": "af0e023063b4e5bf",
+      "fromSide": "right",
+      "id": "ab7d809c9291c075",
+      "toNode": "67c17ca30a6901cf",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "af0e023063b4e5bf",
+      "fromSide": "right",
+      "id": "588cbbb92d72ec5a",
+      "toNode": "c8958778b6d2289a",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "c8958778b6d2289a",
+      "fromSide": "right",
+      "id": "d3bc9772dbffb7a6",
+      "toNode": "e2577f2ab8e380a8",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "af0e023063b4e5bf",
+      "fromSide": "bottom",
+      "id": "9a06906984db90c7",
+      "toNode": "398d08b09d337e03",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "af0e023063b4e5bf",
+      "fromSide": "bottom",
+      "id": "9fcf948f5b1226ca",
+      "styleAttributes": {
+        "path": null,
+        "pathfindingMethod": null
+      },
+      "toNode": "e91b00f1b456aa0a",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e91b00f1b456aa0a",
+      "fromSide": "bottom",
+      "id": "865b396ae508ea3c",
+      "styleAttributes": {
+      },
+      "toNode": "f6ee6c01a9d72aee",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "398d08b09d337e03",
+      "fromSide": "bottom",
+      "id": "d3a52574c8853df1",
+      "styleAttributes": {
+      },
+      "toNode": "30c2696d29efefbe",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "77d26259f2d7506b",
+      "fromSide": "right",
+      "id": "db45cc2e03791b93",
+      "styleAttributes": {
+      },
+      "toNode": "20597be93ee9a63d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "7003fecf7e6c83eb",
+      "fromSide": "right",
+      "id": "a5aaa08e86447827",
+      "styleAttributes": {
+      },
+      "toNode": "77d26259f2d7506b",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 336,
+      "id": "21950a4c12d7c675",
+      "isCollapsed": true,
+      "label": "16. Using analysis port in testbench",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 984,
+      "x": 106,
+      "y": -666
+    },
+    {
+      "height": 60,
+      "id": "77d26259f2d7506b",
+      "styleAttributes": {
+      },
+      "text": "16. Using analysis port in testbench",
+      "type": "text",
+      "width": 230,
+      "x": 121,
+      "y": -526
+    },
+    {
+      "file": "16. Using analysis port in testbench.md",
+      "height": 273,
+      "id": "20597be93ee9a63d",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 667,
+      "x": 397,
+      "y": -633
+    },
+    {
+      "height": 107,
+      "id": "67c17ca30a6901cf",
+      "styleAttributes": {
+      },
+      "text": "В RTL передача между модулями происходит за счет использования портов модуля",
+      "type": "text",
+      "width": 333,
+      "x": 367,
+      "y": -242
+    },
+    {
+      "height": 502,
+      "id": "c8958778b6d2289a",
+      "styleAttributes": {
+      },
+      "text": "В классах для передачи данных между объектами используется параметризуемый класс uvm_put_port #(type), который представляет из себя fifo (TLM FIFO) на одно слово.  Когда fifio полное, процесс блокируется до тех пор, пока данные не будут извлечены\n```verilog\nint shared;\nuvm_put_port #(int) put_port_h;\n\nfunction void build_phase(uvm_phase phase);\nput_port_h = new(\"put_port_h\", this);\nendfunction : build_phase\n\ntask run_phase(uvm_phase phase)\nphase.raise_objection(this);\nrepeat (3) begin\nput_port_h.put(++shared);\n$display(\"Sent %0d\", shared);\nend\nphase.drop_objection(this);\nendtask : run_phase\n```\n",
+      "type": "text",
+      "width": 624,
+      "x": 376,
+      "y": -62
+    },
+    {
+      "height": 481,
+      "id": "e2577f2ab8e380a8",
+      "styleAttributes": {
+      },
+      "text": "В принимающей стороне объявляется ссылка на  класс uvm_get_port #(type), из которого за  счет метода get() извлекаются данные. Процесс будет заблокирован, если данные будут извлекаться из пустой fifo\n```verilog\nuvm_get_port #(int) get_port_h;\nint shared;\n\nfunction void build_phase(uvm_phase phase);\nget_port_h = new(\"get_port_h\", this);\nendfunction : build_phase\n\ntask run_phase(uvm_phase phase);\nforever begin\nget_port_h.get(shared);\n$display(\"Received: %0d\", shared);\nend\nendtask : run_phase\n```\nданные из get_port-а будут складываться во внутреннюю переменную shared",
+      "type": "text",
+      "width": 720,
+      "x": 1120,
+      "y": -51
+    },
+    {
+      "height": 60,
+      "id": "af0e023063b4e5bf",
+      "styleAttributes": {
+      },
+      "text": "17. Interhead communication",
+      "type": "text",
+      "width": 250,
+      "x": 20,
+      "y": -92
+    },
+    {
+      "height": 383,
+      "id": "e91b00f1b456aa0a",
+      "styleAttributes": {
+      },
+      "text": "У методов put() и get() есть реализации, неблокирующие поток исполнения, try_put() и get_put(). \nВместо этого они возвращают бит, если операция извлечения была успешна выполнена: \n```verilog\nuvm_get_port #(int) get_port_h;\n\ntask run_phase(uvm_phase phase);\n\tforever begin\n\t\t@(posedge clk_bfm_i.clk);\n\t\tif(get_port_h.try_get(shared))\n\t\t\t$display(\"%0tns Received: %0d\", $time,shared);\n\tend\nendtask : run_phase\n```",
+      "type": "text",
+      "width": 704,
+      "x": 1180,
+      "y": 500
+    },
+    {
+      "height": 870,
+      "id": "398d08b09d337e03",
+      "styleAttributes": {
+      },
+      "text": "В классе теста (наследник uvm_test) необходимо объявить placeholder-ы для классов, аллоцировать память в build_phase и соединить компоненты в connection_phase. Соединение портов происходит через параметризуемый класс uvm_tlm_fifo в uvm_test. \n```verilog\nclass communication_test extends uvm_test;\n`uvm_component_utils(communication_test)\n\nproducer producer_h;\nconsumer consumer_h;\n\nuvm_tlm_fifo #(int) fifo_h;\n\nfunction new(string name, uvm_component parent);\nsuper.new(name, parent);\nendfunction : new\n\nfunction void build_phase(uvm_phase phase);\nproducer_h = new(\"producer_h\", this);\nconsumer_h = new(\"consumer_h\", this);\nfifo_h = new(\"fifo_h\",this);\n// fifo необязательно должно быть равно 1, оно может быть неограниченным если если в конструкторе передать \"0\" 3-м аргументом. Если число >0, то fifo будет ограничено этим числом \n// fifo_h = new(\"fifo_h\", this, 0);\nendfunction : build_phase\n\nfunction void connect_phase(uvm_phase phase);\nproducer_h.put_port_h.connect(fifo_h.put_export);\nconsumer_h.get_port_h.connect(fifo_h.get_export);\nendfunction : connect_phase\nendclass : communication_test\n```\n\n```verilog\n// порт источника через объект put_port_h соединяется с uvm_tlm_fifo\nproducer_h.put_port_h.connect(fifo_h.put_export);\n// а тот в свою очередь соединяется с портом приемника через get_port_h\nconsumer_h.get_port_h.connect(fifo_h.get_export);\n```\n\nТаким образом fifo_h является связующим звеном между объектами классов:",
+      "type": "text",
+      "width": 724,
+      "x": 276,
+      "y": 682
+    },
+    {
+      "height": 382,
+      "id": "f6ee6c01a9d72aee",
+      "styleAttributes": {
+      },
+      "text": "Использование блокирующих операторов \n```verilog\n@() wait()\n```\n\nприводит к блокировке треда, что может приводить к race condition из-за разного порядка обработки операторов в event region. Для безопасной синхронизации потоков нужно избегать блокировки и использовать неблокирующие методы, такие как: \n```verilog\nforever begin\n\t@(posedge clk);\n\tif(...)\n\t\t....;\nend\n```",
+      "type": "text",
+      "width": 755,
+      "x": 1155,
+      "y": 972
+    },
+    {
+      "file": "fifo_h connection.png",
+      "height": 210,
+      "id": "30c2696d29efefbe",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 712,
+      "x": 282,
+      "y": 1629
+    }
+  ]
+}

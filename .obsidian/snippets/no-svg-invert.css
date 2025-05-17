@@ -1,0 +1,4 @@
+img[src$=".svg"] {
+    filter: none !important;
+    background-color: transparent !important;
+  }

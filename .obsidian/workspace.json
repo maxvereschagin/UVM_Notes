@@ -1,0 +1,282 @@
+{
+  "main": {
+    "id": "af70df1c87165b77",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c320ab9dbae44ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84c943b40fbcf786",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ray Salemi UVM book mindmap.canvas",
+                "viewState": {
+                  "x": 138,
+                  "y": -130,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Ray Salemi UVM book mindmap"
+            }
+          },
+          {
+            "id": "67b5486fcaecb844",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "17. Interhead communication.canvas",
+                "viewState": {
+                  "x": 965,
+                  "y": 661.230501510975,
+                  "zoom": -1.6938968722743202
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "17. Interhead communication"
+            }
+          },
+          {
+            "id": "2429c955aae148b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "16. Using analysis port in testbench.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "16. Using analysis port in testbench"
+            }
+          },
+          {
+            "id": "60af1854d00d22f8",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "17. Interhead communication.canvas",
+                "viewState": {
+                  "x": 1093.0570278441216,
+                  "y": 416.1868696751683,
+                  "zoom": -0.33687546263117485
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "17. Interhead communication"
+            }
+          },
+          {
+            "id": "29fe380897310b1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20. Class Hierarchies and Deep Operations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20. Class Hierarchies and Deep Operations"
+            }
+          },
+          {
+            "id": "f777f48d27181c05",
+            "type": "leaf",
+            "state": {
+              "type": "diagram-edit",
+              "state": {
+                "file": "Untitled Diagram.svg"
+              },
+              "icon": "lucide-file",
+              "title": "Untitled Diagram.svg"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44effb14c82207cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d3a7d4b2a522cfd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "090b72d573d39471",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "d7d5b14b5d5cc43d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "0d305a3cd8cc8ff8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "94e4b049e3179156",
+    "type": "split",
+    "children": [
+      {
+        "id": "22eea34d7035ea93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60e46e8f5945a69d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "20. Class Hierarchies and Deep Operations.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для 20. Class Hierarchies and Deep Operations"
+            }
+          },
+          {
+            "id": "c43e4af23fc7af73",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "20. Class Hierarchies and Deep Operations.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из 20. Class Hierarchies and Deep Operations"
+            }
+          },
+          {
+            "id": "2f6576aba9341c43",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "eb6d79872c581cf7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "20. Class Hierarchies and Deep Operations.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура 20. Class Hierarchies and Deep Operations"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "29fe380897310b1b",
+  "lastOpenFiles": [
+    "do_copy_dark.svg",
+    "pictures.drawio",
+    "your-file.svg",
+    "20. Class Hierarchies and Deep Operations.md",
+    "no-svg-invert.css",
+    "Excalidraw/Drawing 2025-05-17 13.47.00.excalidraw.md",
+    "Excalidraw",
+    "ExcalidrawScripts/PreserveImageColor.md",
+    "ExcalidrawScripts",
+    "Без названия",
+    "Ray Salemi UVM book mindmap.canvas",
+    "Untitled Diagram.svg",
+    "Pasted image 20250511233317.png",
+    "22.UVM_Agents.md",
+    "23.UVM_Sequences.md",
+    "do_copy_picture.drawio",
+    "21.UVM_Transaction.md",
+    "18.Put_and_get_Ports_in_Action.md",
+    "17. Interhead communication.canvas",
+    "16. Using analysis port in testbench.md",
+    "env_class.png",
+    "19.UVM_Reporting.md",
+    "Без названия.canvas",
+    "18. Put and Get Ports in Action.canvas",
+    "do_copy.png",
+    "do_copy.svg",
+    "Диаграмма без названия.drawio",
+    "fifo_h connection.png",
+    "17. Interhead communication note.md",
+    "Добро пожаловать.md"
+  ]
+}
