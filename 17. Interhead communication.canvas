@@ -112,6 +112,17 @@
       "y": -633
     },
     {
+      "file": "fifo_h connection.png",
+      "height": 210,
+      "id": "30c2696d29efefbe",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 712,
+      "x": 282,
+      "y": 1629
+    },
+    {
       "height": 107,
       "id": "67c17ca30a6901cf",
       "styleAttributes": {
@@ -121,6 +132,17 @@
       "width": 333,
       "x": 367,
       "y": -242
+    },
+    {
+      "height": 382,
+      "id": "f6ee6c01a9d72aee",
+      "styleAttributes": {
+      },
+      "text": "Использование блокирующих операторов \n```verilog\n@() wait()\n```\n\nприводит к блокировке треда, что может приводить к race condition из-за разного порядка обработки операторов в event region. Для безопасной синхронизации потоков нужно избегать блокировки и использовать неблокирующие методы, такие как: \n```verilog\nforever begin\n\t@(posedge clk);\n\tif(...)\n\t\t....;\nend\n```",
+      "type": "text",
+      "width": 755,
+      "x": 1155,
+      "y": 972
     },
     {
       "height": 502,
@@ -176,28 +198,6 @@
       "width": 724,
       "x": 276,
       "y": 682
-    },
-    {
-      "height": 382,
-      "id": "f6ee6c01a9d72aee",
-      "styleAttributes": {
-      },
-      "text": "Использование блокирующих операторов \n```verilog\n@() wait()\n```\n\nприводит к блокировке треда, что может приводить к race condition из-за разного порядка обработки операторов в event region. Для безопасной синхронизации потоков нужно избегать блокировки и использовать неблокирующие методы, такие как: \n```verilog\nforever begin\n\t@(posedge clk);\n\tif(...)\n\t\t....;\nend\n```",
-      "type": "text",
-      "width": 755,
-      "x": 1155,
-      "y": 972
-    },
-    {
-      "file": "fifo_h connection.png",
-      "height": 210,
-      "id": "30c2696d29efefbe",
-      "styleAttributes": {
-      },
-      "type": "file",
-      "width": 712,
-      "x": 282,
-      "y": 1629
     }
   ]
 }
